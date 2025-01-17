@@ -5,9 +5,9 @@
     function get_admin(){
         global $pdo;
         $q = $pdo->prepare("select * from `admin` where `login` = :login");
-        $q->bindParama(':login', $login, PDO::PARAM_STR);
+        $q->bindParam(':login', $login, PDO::PARAM_STR);
         $q->execute();
-        $admin = $q->fecth(PDO::FETCH_ASSOC);
+        $admin = $q->fetch(PDO::FETCH_ASSOC);
 
 
         if($admin && password_verify($password, $admin['password'])){
