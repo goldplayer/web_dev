@@ -14,9 +14,13 @@ switch ($page) {
     case 'admin':
         include 'view/admin.php';
         break;
-    case 'home':
+    case 'index':
         include 'view/home.php';
         break;
+    case 'logout':
+        include 'view/logout.php';
+    case 'gallery':
+        include 'view/gallery.php';
     default:
         include 'view/404.php'; // Страница ошибки 404, если страница не найдена
         break;

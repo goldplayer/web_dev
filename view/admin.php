@@ -1,11 +1,22 @@
 <?php
     include 'includes/function.php';
+    session_start();
+    if(!isset($_SESSION['is_logged']) || $_SESSION['is_logged'] !== true){
+     
+        header("Location: login");
+        exit();
 
-    if(get_admin()){
-        // header('Location: /web-dev/admin');
+    }else{
+        // var_dump($_SESSION['name']);exit;
     }
-
-
 ?>
 
-<main>Hello Admin</main>
+        
+        <h1>admin</h1>
+
+        <p>Welcome <?php echo $_SESSION['name']?> </p>
+
+        <a href="logout">LogOut -> </a>
+
+
+
