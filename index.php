@@ -1,3 +1,4 @@
+<div class="container">
 <?php
 
 include 'includes/header.php';
@@ -30,3 +31,4 @@ switch ($page) {
 include 'includes/footer.php';
 
 ?>
+</div>
