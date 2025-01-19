@@ -12,11 +12,13 @@
 ?>
 
         
+     <div class="row">
         <h1>admin</h1>
 
         <p>Welcome <?php echo $_SESSION['name']?> </p>
 
         <a href="logout">LogOut -> </a>
+     </div>
 
 
 
