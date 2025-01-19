@@ -27,21 +27,27 @@
     }
 ?>
 
-
-<div class="container">
-<form id="loginForm" method="post">
-    <label for="login">Логин:</label>
-    <input type="text" id="name" name="name" >
-    <br>
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="pass" >
-    <br>
-    <button type="submit">Войти</button>
-   <?php if(!empty($error)): ?>
-        <div class="alert">
-            <?php echo htmlspecialchars($error) ?>
-        </div>
-    <?php endif; ?>
-</form>
-<div id="responseMessage"></div>
+<section class="form_login">
+    
+<div class="container ">
+        <form class="login_form" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" name="pass" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary" type="submit">Войти</button>
+        <?php if(!empty($error)): ?>
+                <div class="alert">
+                    <?php echo htmlspecialchars($error) ?>
+                </div>
+            <?php endif; ?>
+        </form>
+    <div id="responseMessage"></div>
 </div>
+
+</section>
