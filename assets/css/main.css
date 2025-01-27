@@ -172,14 +172,14 @@ header .logo_header a:hover {
   position: relative;
 }
 .first_block .first_block_information::after {
-  content: "Photographer";
+  content: "PHOTOGRAPHER";
   position: absolute;
   width: 100px;
   transform: rotate(-90deg);
   left: 0%;
   right: 10px;
   /* top: 0%; */
-  bottom: -5%;
+  bottom: -3.5%;
   font-size: 94px;
   text-transform: uppercase;
   opacity: 0.1;
@@ -197,6 +197,24 @@ header .logo_header a:hover {
   font-size: 32px;
   text-transform: uppercase;
   font-style: italic;
+}
+
+.btn_descr{
+  max-width: 450px;
+  margin-left: auto;
+  margin-top: 65px;
+}
+
+.get_started{
+  padding: 14.5px 45px;
+  border: 0px solid;
+  background: #1A1919;
+  color: #fff;
+  transition: 0.33s ease;
+}
+
+.get_started:hover{
+  background-color: #f39c12;
 }
 
 /* sections */

@@ -12,11 +12,14 @@
         <div class="first_block_information">
           <h1 class="first_block_heading_h1">
             Photography isn’t just about taking pictures; it’s about telling
-            your story. Let’s create something extraordinary together, one shot
-            at a time.
+            your story. Let’s create something extraordinary together, one shot -
+            one kill.
           </h1>
+            <div class="btn_descr">
+                <p class="btn_descr">Lorem ipsum dolor sit amet, consecte adipiscin elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim minim</p>
+                <button class="get_started">Get Started</button>
+            </div>
         </div>
-        <div class="row justify-content-end"></div>
       </div>
     </div>
   </div>
