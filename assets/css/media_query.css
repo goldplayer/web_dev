@@ -1,0 +1,15 @@
+@media  (max-width: 1440px) {
+    .first_block .first_block_information::after {
+        content: "PHOTOGRAPHER";
+        position: absolute;
+        width: 100px;
+        transform: rotate(-90deg);
+        left: 0%;
+        right: 10px;
+        /* top: 0%; */
+        bottom: 21%;
+        font-size: 64px !important;
+        text-transform: uppercase;
+        opacity: 0.1;
+    }
+}

@@ -17,7 +17,17 @@
           </h1>
             <div class="btn_descr">
                 <p class="btn_descr">Lorem ipsum dolor sit amet, consecte adipiscin elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim minim</p>
-                <button class="get_started">Get Started</button>
+                <button class="get_started animate__animated">Get Started</button>
+            </div>
+
+            <div class="first_block_bottom_content">
+                <div class="col-3 col-md-6 col-lg-6">
+                    <span class="header_line"></span>
+                    <h3>Passion Meets Precision Behind Every Shot.</h3>
+                </div>
+                <div class="col-3 col-md-6 col-lg-6">
+                    <img src="./assets/images/test_2.png" alt="">
+                </div>
             </div>
         </div>
       </div>
