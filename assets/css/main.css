@@ -6,16 +6,13 @@
   padding: 0;
 }
 
-/*.container {*/
-/*  max-width: 1800px;*/
-/*}*/
+
 
 body {
   /* height: 100%; */
   font-family: "Roboto Mono", serif;
   color: #1a1919;
 }
-
 header {
   padding-bottom: 30px;
   padding-top: 30px;
@@ -68,10 +65,8 @@ header .logo_header a:hover {
   border-radius: 10px;
 }
 
-.container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+.container{
+  display: grid;
 }
 
 .login_form {
@@ -79,6 +74,22 @@ header .logo_header a:hover {
   margin-right: auto;
 }
 
+.first_section{
+  padding-bottom: 120px;
+}
+
+.first_section .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* .first_section .left_column{
+
+} */
+.first_section .left_column img{
+  width: 100%;
+}
 /* burger menu */
 .burger {
   position: relative;
@@ -161,67 +172,3 @@ header .logo_header a:hover {
 }
 /* burger menu */
 
-/* sections */
-
-.first_block {
-  /* padding-top: 100px; */
-  padding-bottom: 100px;
-}
-.first_block_information {
-  height: 100%;
-  position: relative;
-}
-.first_block .first_block_information::after {
-  content: "PHOTOGRAPHER";
-  position: absolute;
-  width: 100px;
-  transform: rotate(-90deg);
-  left: 0%;
-  right: 10px;
-  /* top: 0%; */
-  bottom: 21%;
-  font-size: 94px;
-  text-transform: uppercase;
-  opacity: 0.1;
-}
-.first_block .first_block_image {
-  height: 100%;
-  max-width: 785px;
-}
-
-.first_block .first_block_image img {
-  width: 100%;
-}
-
-.first_block .first_block_heading_h1 {
-  font-size: 32px;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-.btn_descr{
-  max-width: 450px;
-  margin-left: auto;
-  margin-top: 65px;
-}
-
-.get_started{
-  padding: 14.5px 45px;
-  border: 0px solid;
-  background: #1A1919;
-  color: #fff;
-  transition: 0.33s ease;
-}
-
-.get_started:hover{
-  background-color: #f39c12;
-  border-radius: 33px;
-}
-
-.first_block_bottom_content{
-  display: flex;
-  align-items: center;
-  margin-top: 78px;
-}
-
-/* sections */
