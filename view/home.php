@@ -14,9 +14,11 @@
         </h1>
         <div class="content-rc">
           <div class="text-btn-left">
-            <span class="black-line"></span>
-            <p>Passion Meets Precision Behind Every Shot.</p>
-            <button class="explore-now">Explore Now</button>
+            <div class="tbr-info">
+              <span class="black-line"></span>
+              <p>Passion Meets Precision Behind Every Shot.</p>
+              <button class="explore-now">Explore Now</button>
+            </div>
           </div>
           <div class="text-btn-right">
             <div class="right-caption">
@@ -26,8 +28,11 @@
                 minim
               </p>
               <button class="get-started">Get Started</button>
+              <div class="img-right">
+                <img src="././assets/images/deadpoll.jpg" alt="">
+              </div>
             </div>
-            <div class="img-right"></div>
+           
           </div>
         </div>
       </div>

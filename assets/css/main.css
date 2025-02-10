@@ -54,8 +54,11 @@ body {
   gap: 20px;
   width: 100%;
   height: 100%;
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
 }
-
+.left-col{
+  grid-column: 1/2;
+}
 .right-col {
   grid-column: 2/3;
 }
@@ -68,21 +71,29 @@ body {
 
 .content-rc {
   display: grid;
-  flex-grow: 1; /* Позволяет блоку занять всю доступную высоту */
   height: 100%; /* Убедитесь, что он растягивается */
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .text-btn-left {
   grid-column: 1/2;
+  flex-grow: 1;
   align-content: flex-end;
-  justify-content: flex-end;
+}
+
+.tbr-info{
+  display: block;
+  margin-left: auto;
   max-width: 350px;
 }
 .text-btn-right {
   grid-column: 2/3;
-  max-width: 500px;
+  /* flex-grow: 1; */
   margin-left: auto;
+}
+
+.right-caption{
+  max-width: 500px;
 }
 
 .black-line {
@@ -110,8 +121,16 @@ body {
   color: var(--main-black-color);
   border: 1px solid var(--main-black-color);
 }
+
+.img-right img{
+
+
+
+}
+
 .first-heading {
   margin-bottom: 75px;
+  max-width: 100%;
 }
 
 .text-btn-left p {
@@ -136,5 +155,7 @@ body {
   top: -15px;
   left: -20px;
 }
+
+
 /* *************************************** */
 /* first */
