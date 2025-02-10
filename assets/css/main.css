@@ -96,6 +96,7 @@ header .logo_header a:hover {
 
 .first_section .left_column img{
   width: 100%;
+  height: 100%;
 }
 
 .first_section .right_column{
@@ -128,7 +129,7 @@ header .logo_header a:hover {
   margin-top: 23.5px;
 }
 .block_explore .btn_explore_sub{
-    background-color: #fff;
+    background-color: #FCFCF6;
     font-size: 20px;
     color: #1a1919;
     border: 0px solid;
@@ -151,12 +152,26 @@ header .logo_header a:hover {
 }
 
 .block_getstarted{
-  width: 450px;
+  max-width: 450px;
 }
 .block_getstarted p {
   font-size: 20px;
 
 } 
+.block_getstarted button{
+  padding: 15px 45px;
+  border: 1px solid transparent;
+  background-color: #1a1919;
+  color: #FCFCF6;
+  transition: .33s ease;
+}
+.block_getstarted button:hover{
+  color: #1a1919;
+  background-color: #FCFCF6;
+  border: 1px solid #1a1919;
+  /* border-radius: 10px; */
+
+}
 
 .line_black{
   display: block;
