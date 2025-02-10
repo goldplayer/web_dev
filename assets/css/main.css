@@ -18,6 +18,7 @@ body {
   /* height: 100%; */
   font-family: "Albert Sans", serif;
   font-optical-sizing: auto;
+  background-color: #FCFCF6;
 }
 header {
   padding-bottom: 40px;
@@ -149,6 +150,13 @@ header .logo_header a:hover {
   z-index: -1;
 }
 
+.block_getstarted{
+  width: 450px;
+}
+.block_getstarted p {
+  font-size: 20px;
+
+} 
 
 .line_black{
   display: block;
