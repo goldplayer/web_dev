@@ -1,168 +1,140 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Jersey+15&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./header-footer.css");
+@import url("./burger.css");
 /* @import "./media_query.css"; */
+
+/* variables */
+
+:root {
+  --main-black-color: #1a1919;
+  --bg-color: #fcfcf6;
+}
+
+/* variables */
 * {
   margin: 0;
   padding: 0;
 }
 
-.container{
+.container {
   max-width: 100%;
   padding-left: 50px;
   padding-right: 50px;
 }
-
+h1 {
+  font-size: 32px;
+  line-height: 45px;
+  text-align: left;
+  font-style: italic;
+  text-transform: uppercase;
+}
 body {
   /* height: 100%; */
   font-family: "Albert Sans", serif;
   font-optical-sizing: auto;
-  background-color: #FCFCF6;
-}
-header {
-  padding-bottom: 40px;
-  padding-top: 40px;
-}
-.header_menu{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
-}
-
-header .logo_header a {
-  font-family: "Jersey 15", serif;
-  font-size: 25px;
-  color: #1a1919;
-  text-decoration: none;
-  transition: 0.33s ease-in-out;
-}
-header .logo_header a:hover {
-  color: #f39c12;
-}
-.footer {
-  background-color: #1a1919;
-  display: flex;
-  padding-top: 150px;
-  padding-bottom: 150px;
-  text-align: center;
-  width: 100%;
-}
-.footer .heading_footer {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-  font-size: 86px;
-  text-align: center;
-  color: #fff;
-
-  text-transform: uppercase;
-}
-.footer .contact_btn_footer {
-  padding: 25px 75px;
   background-color: #fcfcf6;
-  max-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 100px;
-  text-transform: uppercase;
-  font-size: 22px;
-  transition: 0.33s ease-in-out;
 }
-
-.footer .contact_btn_footer:hover {
-  background-color: #f39c12;
-  color: #fcfcf6;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
 
 .login_form {
   margin-left: auto;
   margin-right: auto;
 }
 
+/* *************************************** */
+/* first */
 
-/* burger menu */
-.burger {
-  position: relative;
-  z-index: 1001;
-  width: 40px;
-  height: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0;
+.first {
+  padding-bottom: 129px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.right-col {
+  grid-column: 2/3;
+}
+
+.right-col {
+  grid-column: 2/3;
+  display: flex; /* Добавляем flex-контейнер */
+  flex-direction: column; /* Располагаем элементы вертикально */
+}
+
+.content-rc {
+  display: grid;
+  flex-grow: 1; /* Позволяет блоку занять всю доступную высоту */
+  height: 100%; /* Убедитесь, что он растягивается */
+  justify-content: flex-end;
+}
+
+.text-btn-left {
+  grid-column: 1/2;
+  align-content: flex-end;
+  justify-content: flex-end;
+  max-width: 350px;
+}
+.text-btn-right {
+  grid-column: 2/3;
+  max-width: 500px;
   margin-left: auto;
 }
 
-.burger span {
+.black-line {
   display: block;
-  width: 100%;
-  height: 4px;
-  background-color: black;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+  width: 124px;
+  height: 2px;
+  background-color: #000;
+}
+.right-caption {
+  /*  */
+}
+.right-caption p {
+  font-size: 20px;
+}
+.get-started {
+  padding: 15px 45px;
+  background-color: var(--main-black-color);
+  color: var(--bg-color);
+  border: 1px solid transparent;
+  transition: 0.33s ease;
 }
 
-/* Оверлей меню */
-.menu-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-100%);
-  transition: transform 0.5s ease;
-  z-index: 1000;
+.get-started:hover {
+  background-color: var(--bg-color);
+  color: var(--main-black-color);
+  border: 1px solid var(--main-black-color);
+}
+.first-heading {
+  margin-bottom: 75px;
 }
 
-.menu-overlay.active {
-  transform: translateY(0);
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.menu ul li {
-  margin: 20px 0;
-}
-
-.menu ul li a {
-  text-decoration: none;
+.text-btn-left p {
   font-size: 24px;
-  color: white;
+  line-height: auto;
+  font-weight: 400;
   text-transform: uppercase;
-  transition: color 0.3s ease;
+  margin-top: 24px;
 }
-
-.menu ul li a:hover {
-  color: #f39c12;
+.explore-now {
+  padding: 5px 5px;
+  background-color: var(--bg-color);
+  text-transform: uppercase;
+  color: var(--main-black-color);
+  border: 1px solid transparent;
+  position: relative;
 }
-
-/* Анимация кнопки-бургера при активации */
-.burger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(14px, 13px);
+.explore-now::before {
+  position: absolute;
+  content: url("../images/Ellipse1.svg");
+  z-index: -1;
+  top: -15px;
+  left: -20px;
 }
-
-.burger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -4px);
-}
-/* burger menu */
-
+/* *************************************** */
+/* first */
